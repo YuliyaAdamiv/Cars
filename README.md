@@ -13,6 +13,7 @@ Live demo [_here_](https://yuliyazakharchuk.github.io/Cars/).
   - [Setup](#setup)
     - [To open](#to-open)
     - [To edit](#to-edit)
+    - [To improve](#to-improve)
   - [Contact](#contact)
 
 
@@ -47,6 +48,10 @@ Live demo [_here_](https://yuliyazakharchuk.github.io/Cars/).
 - `$ brew install sass/sass/sass`
 - `$ sass --watch scss/ css/main.css`
 
+### To improve
+- Add links to  footer;
+- Add visible status to email form;
+- Change arrows and items for sorting;
 
 ## Contact
 
