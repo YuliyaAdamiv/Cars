@@ -1,0 +1,105 @@
+@import './variables.scss';
+@import './header.scss';
+@import './section.scss';
+@import './footer.scss';
+body {
+    font-family: 'Noto Sans', sans-serif;
+    background: #E5E5E5;
+}
+
+button {
+    cursor: pointer;
+}
+
+.main-text {
+    margin-bottom: 72px;
+}
+
+.main-button {
+    color: $color-primary-200;
+    background-color: Transparent;
+    border: 2px solid $color-primary-200;
+    border-radius: 15px;
+    padding: 13px 90px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 140px;
+}
+
+.main-button:hover {
+    color: $color-primary-100;
+    background-color: $color-primary-200;
+}
+
+.main-button:active {
+    color: $color-primary-200;
+    background-color: Transparent;
+}
+
+main {
+    margin-bottom: 200px;
+}
+
+@media (max-width: 560px) {
+    .sort,
+    .checkbox {
+        width: 100%;
+    }
+    .sort {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin: 0;
+    }
+    .button {
+        margin-left: 35px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-lg-1-5 {
+        flex: 0 0 17%;
+        max-width: 17%;
+        position: relative;
+        width: 100%;
+        padding-right: 5px;
+    }
+    .button-sort {
+        width: 80%;
+    }
+}
+
+@media (max-width: 992px) {
+    .main-text-item,
+    .button-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    .main-text {
+        margin-bottom: 30px;
+    }
+    input {
+        margin-bottom: 35px;
+    }
+    .button-sort {
+        width: 93%;
+    }
+    .dropdown {
+        margin: 10px;
+    }
+    .arrow .dropdown {
+        margin: 0;
+    }
+    .btn-secondary {
+        width: 90%;
+    }
+    .arrow {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+}

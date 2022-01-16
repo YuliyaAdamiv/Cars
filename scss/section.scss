@@ -1,0 +1,331 @@
+@import './variables.scss';
+h2 {
+    color: $color-secondary-100;
+}
+
+.card {
+    box-shadow: 0px 0px 18px rgba(68, 68, 68, 0.09);
+}
+
+select {
+    border: 1px solid $color-secondary-300;
+    margin-right: 20px;
+    border-radius: 15px;
+}
+
+.form-check-label,
+.sort {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    color: $color-secondary-200;
+}
+
+.sort {
+    margin-top: 10px;
+}
+
+.col-lg-1-5 {
+    flex: 0 0 14.3%;
+    max-width: 14.3%;
+    position: relative;
+    width: 100%;
+    padding-right: 10px;
+}
+
+.dropdown-item:hover {
+    color: $color-primary-300;
+    background-color: #fff;
+}
+
+.text-sort,
+.img-sort,
+.checkbox {
+    margin-top: 10px;
+}
+
+.card-element {
+    color: $color-secondary-200;
+    font-size: 13px;
+    line-height: 19px;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.card-title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 23px;
+    padding-left: 0;
+}
+
+.card-title:hover {
+    text-decoration: underline;
+}
+
+.card-year {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    color: $color-secondary-200;
+    padding-right: 0;
+}
+
+h4 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 34px;
+    margin-top: 40px;
+}
+
+.card-price {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.subscribe {
+    background-color: $color-primary-100;
+    color: $color-primary-200;
+}
+
+.arrows {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.subscribe-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    border: 1px solid $color-secondary-300;
+    border-radius: 15px;
+    width: 100%;
+    background-color: Transparent;
+    padding: 15px 22px 19px 16px;
+    color: $color-primary-200;
+}
+
+input:focus {
+    color: $color-primary-200;
+}
+
+.button-subscribe,
+.button-sort {
+    color: $color-primary-100;
+    background-color: $color-primary-200;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    border-radius: 15px;
+}
+
+.button-subscribe {
+    margin-left: 20px;
+}
+
+.button-sort {
+    margin-left: 25px;
+}
+
+.btn-secondary {
+    border-radius: 15px;
+}
+
+.button-subscribe:hover {
+    color: $color-primary-200;
+    background-color: $color-primary-100;
+}
+
+.button-subscribe:active {
+    color: $color-primary-100;
+    background-color: $color-primary-200;
+}
+
+.button-sort {
+    margin-top: 0;
+    background-color: $color-primary-300;
+    border: none;
+    color: $color-primary-200;
+}
+
+.button-sort:hover {
+    color: $color-primary-300;
+    border: 1px solid $color-primary-300;
+    background-color: $color-primary-200;
+}
+
+.button-sort:active {
+    background-color: $color-primary-300;
+    border: none;
+    color: $color-primary-200;
+}
+
+.items {
+    margin-bottom: 120px;
+}
+
+.accordion-item {
+    border: none;
+    border-bottom: 1px solid $color-secondary-400;
+}
+
+.accordion-button {
+    background-color: #e5e5e5;
+}
+
+.accordion-button:not(.collapsed) {
+    color: $color-primary-300;
+    background-color: $color-secondary-500;
+}
+
+.accordion-button::after {
+    background-image: none;
+    content: '+';
+}
+
+.accordion-button:not(.collapsed)::after {
+    content: '-';
+    background-image: none;
+    color: $color-primary-300;
+}
+
+.sold {
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    width: 111px;
+    height: 35px;
+}
+
+.new {
+    width: 66.5px;
+    height: 24px;
+    margin-top: -24px;
+}
+
+.empty {
+    width: 40%;
+}
+
+input+span {
+    position: relative;
+}
+
+input+span::before {
+    position: absolute;
+    right: 20px;
+    top: 5px;
+}
+
+input:invalid:focus {
+    border: 2px solid $color-primary-300;
+}
+
+.correct-not {
+    content: '✖';
+    color: $color-primary-300;
+}
+
+.correct {
+    content: '✓';
+    color: $color-secondary-700;
+}
+
+input[type="checkbox"]:checked {
+    background-color: $color-primary-300;
+}
+
+input[type=checkbox]:checked+label {
+    color: $color-primary-300;
+}
+
+.form-check-input {
+    width: 16px;
+    height: 16px;
+    padding: 0;
+}
+
+.invalid-feedback {
+    display: block;
+}
+
+.custom-select {
+    position: relative;
+}
+
+.custom-select select {
+    display: none;
+}
+
+.select-selected {
+    background-color: $color-primary-200;
+    border-radius: 15px;
+}
+
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 20px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: rgb(12, 7, 7) transparent transparent transparent;
+}
+
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+}
+
+.select-items div,
+.select-selected {
+    color: $color-primary-100;
+    padding: 8px 16px;
+    border-color: transparent transparent #fff transparent;
+    cursor: pointer;
+    user-select: none;
+}
+
+.select-items div:hover {
+    color: $color-primary-300;
+    background: $color-primary-200
+}
+
+.select-items {
+    position: absolute;
+    background-color: $color-primary-200;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+    background-color: $color-primary-200;
+}
+
+.publication .select-selected:after {
+    border-color: #fff transparent transparent transparent;
+}
+
+form {
+    display: flex;
+    direction: row;
+}

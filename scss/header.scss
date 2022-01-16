@@ -1,0 +1,33 @@
+@import './variables.scss';
+.container-fluid {
+    padding: 0;
+}
+
+.navbar-toggler {
+    background-color: $color-primary-200;
+    color: $color-primary-100;
+}
+
+.header {
+    background-image: url(../image/main-photo.jpg);
+    color: $color-primary-200;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    width: 100%;
+}
+
+h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 68px;
+    margin-top: 136px;
+}
+
+.nav-link {
+    color: $color-primary-200;
+    padding: 27px;
+    margin-right: 40px;
+}
