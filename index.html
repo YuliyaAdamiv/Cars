@@ -101,11 +101,13 @@
                     </ul>
                 </div>
 
-                <button onclick="disable('sort')" class="btn col-xs-12 col-sm-12 col-md-12 col-lg-3  button-sort" id='sort'>40 cars</button>
+                <button class="btn col-xs-12 col-sm-12 col-md-12 col-lg-3  button-sort" id='sort'>40 cars</button>
+
             </section>
             <section class='row '>
                 <div class="checkbox col-6 ">
-                    <input class="form-check-input" type="checkbox" value="" onclick="disable('defaultCheck1')" id="defaultCheck1">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+
                     <label class="form-check-label" for="defaultCheck1">
                     Instantly available vehicles
                 </label>
@@ -584,13 +586,10 @@
 
                         </div>
                         <div class=" col-lg-8  col-md-12 has-validation ">
-                            <form id="form_id" method="post" action="" onsubmit="javascript:return validate('form_id','email');" placeholder="Enter your email">
-                                <input type="text" id="email" name="email" class="col-8 " />
+                            <form placeholder="Enter your email">
+                                <input type="text" id="email" name="email" class="col-8 " onkeydown="validateEmail(this)" />
                                 <span></span>
-                                <div id="not-correct" class='d-none'>
-                                    Incorrect email
-                                </div>
-                                <input type="submit" value="Subscribe now" class='btn button-subscribe text-wrap' id='subscribe' />
+                                <input type="submit" value="Subscribe now" class='btn button-subscribe text-wrap' id='subscribe' disabled />
                             </form>
                         </div>
                     </div>
@@ -731,7 +730,7 @@
             <nav class="navbar navbar-nav-scroll navbar-expand-lg">
                 <div class="container-fluid">
                     <img class="navbar-brand" src="./image/logo.svg">
-                    <div class=" collapse navbar-collapse footer-links justify-content-center" id="navbarSupportedContent">
+                    <div class=" collapse navbar-collapse  justify-content-center" id="navbarSupportedContent">
                         <div class=" navbar-nav w-100">
                             <div class="empty"></div>
                             <a class="nav-item nav-link" href="#">Inventory</a>
