@@ -38,7 +38,7 @@
                     <div class='col-xl-3 col-lg-4'>All of our cars come with a 5 day/500 kilometres no-hassle exchange option. Since 2012 Monza Motorsports has been the benchmark for innovation in the automotive industry.</div>
                 </div>
                 <div class='button-container'>
-                    <button onclick="disable('main')" class=" btn main-button" id='mainButton'>Browse cars</button>
+                    <button class=" btn main-button" id='mainButton'>Browse cars</button>
                 </div>
             </div>
         </header>
@@ -50,56 +50,45 @@
             </div>
             <section class="row">
                 <div class="dropdown  button-container" name="dropdown">
-                    <button class="btn btn-secondary bg-light text-dark dropdown-toggle col-xs-12 col-sm-12 col-md-12  " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                        Year
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item">2015</a></li>
-                        <li><a class="dropdown-item">2016</a></li>
-                        <li><a class="dropdown-item">2017</a></li>
-                    </ul>
+                    <select class="btn btn-secondary bg-light text-dark dropdown-toggle col-xs-12 col-sm-12 col-md-12  ">
+                        <option selected>Year</option>
+                        <option class="dropdown-item" value="1">2015</option>
+                        <option class="dropdown-item" value="2">2016</option>
+                        <option class="dropdown-item" value="3">2017</option>
+                    </select>
                 </div>
                 <div class="dropdown  button-container" name="dropdown">
-                    <button class="btn btn-secondary bg-light text-dark dropdown-toggle col-xs-12 col-sm-12 col-md-12  " type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-                        Make
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-                        <li><a class="dropdown-item">Honda</a></li>
-                        <li><a class="dropdown-item">Kia</a></li>
-                        <li><a class="dropdown-item">Toyota</a></li>
-                        <li><a class="dropdown-item">Volkswagen</a></li>
-                        <li><a class="dropdown-item">Honda</a></li>
-                    </ul>
+                    <select class="btn btn-secondary bg-light text-dark dropdown-toggle col-xs-12 col-sm-12 col-md-12  ">
+                            <option selected>Make</option>
+                            <option class="dropdown-item" value="1">Honda</option>
+                            <option class="dropdown-item" value="2">Kia</option>
+                            <option class="dropdown-item" value="3">Toyota</option>
+                        </select>
                 </div>
                 <div class="dropdown  button-container" name="dropdown">
-                    <button class="btn btn-secondary bg-light text-dark dropdown-toggle col-xs-12 col-sm-12 col-md-12  " type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
-                        Model
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
-                        <li><a class="dropdown-item">Elantra</a></li>
-                        <li><a class="dropdown-item">RX 350 LUXURY</a></li>
-                        <li><a class="dropdown-item">RX 350 F-SPORT</a></li>
-                    </ul>
+                    <select class="btn btn-secondary bg-light text-dark dropdown-toggle col-xs-12 col-sm-12 col-md-12  ">
+                            <option selected>Model</option>
+                            <option class="dropdown-item" value="1">Elantra</option>
+                            <option class="dropdown-item" value="2">RX 350 LUXURY</option>
+                            <option class="dropdown-item" value="3">RX 350 F-SPORT</option>
+                        </select>
                 </div>
                 <div class="dropdown  button-container" name="dropdown">
-                    <button class="btn btn-secondary bg-light text-dark dropdown-toggle col-xs-12 col-sm-12 col-md-12  " type="button" id="dropdownMenuButton4" data-bs-toggle="dropdown" aria-expanded="false">
-                       Trim
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
-                        <li><a class="dropdown-item">Diesel</a></li>
-                        <li><a class="dropdown-item">Gas</a></li>
-                    </ul>
+                    <select class="btn btn-secondary bg-light text-dark dropdown-toggle col-xs-12 col-sm-12 col-md-12  ">
+                            <option selected>Trim</option>
+                            <option class="dropdown-item" value="1">Diesel</option>
+                            <option class="dropdown-item" value="2">Gas</option>
+                        </select>
                 </div>
                 <div class="dropdown  button-container" name="dropdown">
-                    <button class="btn btn-secondary bg-light text-dark dropdown-toggle col-xs-12 col-sm-12 col-md-12  " type="button" id="dropdownMenuButton5" data-bs-toggle="dropdown" aria-expanded="false">
-                        Mileage
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
-                        <li><a class="dropdown-item">19,855 km</a></li>
-                        <li><a class="dropdown-item">104,000 km</a></li>
-                        <li><a class="dropdown-item">69,000 km</a></li>
-                    </ul>
+                    <select class="btn btn-secondary bg-light text-dark dropdown-toggle col-xs-12 col-sm-12 col-md-12  ">
+                            <option selected>Mileage</option>
+                            <option class="dropdown-item" value="1">19,855 km</option>
+                            <option class="dropdown-item" value="2">104,000 km</option>
+                            <option class="dropdown-item" value="3">69,000 km</option>
+                        </select>
                 </div>
+
 
                 <button class="btn col-xs-12 col-sm-12 col-md-12 col-lg-3  button-sort" id='sort'>40 cars</button>
 
@@ -121,19 +110,14 @@
                         <img src='./image/red.png'><img src='./image/arrow-down.png'>
                     </div>
                     <div class="dropdown">
-                        <button class="btn text-secondary dropdown-toggle col-xs-12 col-sm-12 col-md-12  " type="button" id="dropdownMenuButton6" data-bs-toggle="dropdown" aria-expanded="false">
-                                Publication date (ascending)
-                            </button>
-                        <ul class="dropdown-menu publication " aria-labelledby="dropdownMenuButton6">
-                            <li><a class="dropdown-item">Price (ascending)</a></li>
-                            <li><a class="dropdown-item">Price (descending)</a></li>
-                            <li><a class="dropdown-item">Mileage (ascending)</a></li>
-                            <li><a class="dropdown-item">Mileage (discending)</a></li>
-                            <li><a class="dropdown-item">Performance (ascending)</a></li>
-                            <li><a class="dropdown-item">Performance (discending)</a></li>
-                        </ul>
-                    </div>
 
+                        <select class="btn btn-secondary bg-light text-dark dropdown-toggle col-xs-12 col-sm-12 col-md-12  ">
+                                <option selected>Publication date (ascending)</option>
+                                <option class="dropdown-item" value="1">Price (ascending)</option>
+                                <option class="dropdown-item" value="2">Price (descending)</option>
+                                <option class="dropdown-item" value="3">Mileage (ascending)</option>
+                            </select>
+                    </div>
                 </div>
             </section>
             <section class="items">
@@ -587,7 +571,7 @@
                         </div>
                         <div class=" col-lg-8  col-md-12 has-validation ">
                             <form placeholder="Enter your email">
-                                <input type="text" id="email" name="email" class="col-8 " onkeydown="validateEmail(this)" />
+                                <input type="text" id="email" name="email" class="col-8 " onkeydown="validateEmail(this)" placeholder="123456789@gmail.com" />
                                 <span></span>
                                 <input type="submit" value="Subscribe now" class='btn button-subscribe text-wrap' id='subscribe' disabled />
                             </form>
