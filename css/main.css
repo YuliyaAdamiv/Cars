@@ -125,7 +125,9 @@ input[type=checkbox]:checked + label { color: #df4e3c; }
 
 form { display: flex; direction: row; }
 
-footer { background-color: #000; }
+#footer { background-color: #000; }
+
+.copy { text-align: center; color: #8d8d8d; }
 
 @media (max-width: 768px) { .footer-links { display: flex; flex-direction: column; } }
 body { font-family: 'Noto Sans', sans-serif; background: #E5E5E5; }
@@ -150,8 +152,9 @@ main { margin-bottom: 200px; }
 @media (max-width: 992px) { .main-text-item, .button-container { display: flex; align-items: center; justify-content: center; margin-bottom: 30px; }
   .main-text { margin-bottom: 30px; }
   input { margin-bottom: 35px; }
-  .button-sort { width: 93%; }
+  .button-sort { width: 87%; margin-left: 35px; }
   .dropdown { margin: 10px; }
   .arrow .dropdown { margin: 0; }
   .btn-secondary { width: 90%; }
-  .arrow { display: flex; flex-direction: row; justify-content: flex-start; } }
+  .checkbox { text-align: center; }
+  .arrows { display: flex; flex-direction: row; justify-content: center; align-items: center; } }

@@ -86,7 +86,8 @@ main {
         margin-bottom: 35px;
     }
     .button-sort {
-        width: 93%;
+        width: 87%;
+        margin-left: 35px;
     }
     .dropdown {
         margin: 10px;
@@ -97,9 +98,13 @@ main {
     .btn-secondary {
         width: 90%;
     }
-    .arrow {
+    .checkbox {
+        text-align: center;
+    }
+    .arrows {
         display: flex;
         flex-direction: row;
-        justify-content: flex-start;
+        justify-content: center;
+        align-items: center;
     }
 }

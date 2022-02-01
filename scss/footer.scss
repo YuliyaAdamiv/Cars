@@ -1,6 +1,11 @@
 @import './variables.scss';
-footer {
+#footer {
     background-color: $color-primary-100;
+}
+
+.copy {
+    text-align: center;
+    color: $color-secondary-200;
 }
 
 @media (max-width: 768px) {
