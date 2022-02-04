@@ -158,3 +158,4 @@ main { margin-bottom: 200px; }
   .btn-secondary { width: 90%; }
   .checkbox { text-align: center; }
   .arrows { display: flex; flex-direction: row; justify-content: center; align-items: center; } }
+@media (min-width: 992px) and (max-width: 1250px) { .button-sort { margin-left: 20px; } }
