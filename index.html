@@ -50,15 +50,15 @@
             </div>
             <section id='main' class="row">
                 <div class="dropdown  button-container" name="dropdown">
-                    <select class="btn btn-secondary bg-light text-dark dropdown-toggle col-xs-12 col-sm-12 col-md-12  ">
+                    <select onchange="filterCars()" class="btn btn-secondary bg-light text-dark dropdown-toggle col-xs-12 col-sm-12 col-md-12 year ">
                         <option selected>Year</option>
-                        <option class="dropdown-item" value="1">2015</option>
-                        <option class="dropdown-item" value="2">2016</option>
-                        <option class="dropdown-item" value="3">2017</option>
+                        <option class="dropdown-item" value="2014">2014</option>
+                        <option class="dropdown-item" value="2016">2016</option>
+                        <option class="dropdown-item" value="2017">2017</option>
                     </select>
                 </div>
                 <div class="dropdown  button-container" name="dropdown">
-                    <select class="btn btn-secondary bg-light text-dark dropdown-toggle col-xs-12 col-sm-12 col-md-12  ">
+                    <select onchange="filterCars()" class="btn btn-secondary bg-light text-dark dropdown-toggle col-xs-12 col-sm-12 col-md-12  ">
                             <option selected>Make</option>
                             <option class="dropdown-item" value="1">Honda</option>
                             <option class="dropdown-item" value="2">Kia</option>
@@ -66,7 +66,7 @@
                         </select>
                 </div>
                 <div class="dropdown  button-container" name="dropdown">
-                    <select class="btn btn-secondary bg-light text-dark dropdown-toggle col-xs-12 col-sm-12 col-md-12  ">
+                    <select onchange="filterCars()" class="btn btn-secondary bg-light text-dark dropdown-toggle col-xs-12 col-sm-12 col-md-12  ">
                             <option selected>Model</option>
                             <option class="dropdown-item" value="1">Elantra</option>
                             <option class="dropdown-item" value="2">RX 350 LUXURY</option>
@@ -74,14 +74,14 @@
                         </select>
                 </div>
                 <div class="dropdown  button-container" name="dropdown">
-                    <select class="btn btn-secondary bg-light text-dark dropdown-toggle col-xs-12 col-sm-12 col-md-12  ">
+                    <select onchange="filterCars()" class="btn btn-secondary bg-light text-dark dropdown-toggle col-xs-12 col-sm-12 col-md-12  ">
                             <option selected>Trim</option>
                             <option class="dropdown-item" value="1">Diesel</option>
                             <option class="dropdown-item" value="2">Gas</option>
                         </select>
                 </div>
                 <div class="dropdown  button-container" name="dropdown">
-                    <select class="btn btn-secondary bg-light text-dark dropdown-toggle col-xs-12 col-sm-12 col-md-12  ">
+                    <select onchange="filterCars()" class="btn btn-secondary bg-light text-dark dropdown-toggle col-xs-12 col-sm-12 col-md-12  ">
                             <option selected>Mileage</option>
                             <option class="dropdown-item" value="1">19,855 km</option>
                             <option class="dropdown-item" value="2">104,000 km</option>
@@ -118,6 +118,7 @@
                 </div>
             </section>
             <section class="items">
+                <div class="result"></div>
                 <div class="row row-cols-1 row-cols-xl-4 row-cols-md-4 g-4">
                     <div class="col col-lg-3 col-md-6 col-sm-6 col-xs-12">
                         <header class="card h-100">

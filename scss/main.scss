@@ -42,6 +42,10 @@ main {
     margin-bottom: 200px;
 }
 
+.show {
+    display: block;
+}
+
 @media (min-width: 320px) and (max-width: 479px) {
     .button-sort {
         width: 85%;
