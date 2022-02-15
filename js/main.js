@@ -16,25 +16,41 @@ function validateEmail(e) {
 
 function app() {
     const select = document.querySelectorAll('select')
-    console.log(select)
     const cards = document.querySelectorAll('.card')
-    console.log(cards)
+    const result = document.getElementById('result')
+    const divItems = document.getElementById('items')
 
     function filter(category, items) {
         items.forEach((item) => {
             const isItemFiltered = !item.classList.contains(category);
-            console.log(isItemFiltered)
             if (isItemFiltered) {
-                item.classList.add('hide')
+                item.classList.add('anime')
+            } else {
+                item.classList.remove('row')
+                item.classList.remove('anime')
             }
         })
+
+
     }
     select.forEach((select) => {
         select.addEventListener('change', (event) => {
             const currentCategory = event.target.value
-            console.log(event.target.value)
             filter(currentCategory, cards)
         })
+    })
+    cards.forEach((card) => {
+        card.ontransitionend = function() {
+            if (card.classList.contains('anime')) {
+                card.classList.add('hide');
+            } else {
+                card.classList.remove('hide');
+                result.appendChild(card)
+                result.classList.add('col')
+            }
+            //clean result berore every times
+
+        }
     })
 }
 app()

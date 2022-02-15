@@ -38,16 +38,38 @@ button {
     background-color: Transparent;
 }
 
+#result {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
 main {
     margin-bottom: 200px;
 }
 
-.show {
-    display: block;
+.anime {
+    transform: scale(0);
+    opacity: 0;
 }
 
 .hide {
-    display: none;
+    animation-name: hide;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hide {
+    0% {
+        visibility: visible;
+        height: 290px;
+    }
+    100% {
+        visibility: hidden;
+    }
 }
 
 @media (min-width: 320px) and (max-width: 479px) {
