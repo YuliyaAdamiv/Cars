@@ -14,11 +14,11 @@ function validateEmail(e) {
 }
 
 
+
 function app() {
     const select = document.querySelectorAll('select')
     const cards = document.querySelectorAll('.card')
     const result = document.getElementById('result')
-    const divItems = document.getElementById('items')
 
     function filter(category, items) {
         items.forEach((item) => {
@@ -53,4 +53,32 @@ function app() {
         }
     })
 }
-app()
+
+
+// document.getElementById('sort').addEventListener('click', app)
+
+
+function populate(s1, s2) {
+    s1 = document.getElementById(s1)
+    s2 = document.getElementById(s2)
+    s2.innerHTML = '';
+    if (s1.value == 'Lexus') {
+        var optionArray = ['|', 'luxury|RS-350 lUXURY', 'f-sport|RS-350 F-SPORT']
+    } else if (s1.value == 'Toyota') {
+        var optionArray = ['|', 'xle|Highlander XLE', 'lea|Highlander LE A...', 'venza|Venza AWD XLE...']
+    } else if (s1.value == 'Volkswagen') {
+        var optionArray = ['|', 'tiguan|Tiguan']
+    } else if (s1.value == 'Hyundai') {
+        var optionArray = ['|', 'elantra|Elantra']
+    } else if (s1.value == 'Mercedes-Bens') {
+        var optionArray = ['|', 'gle-cl|GLE-Cl...']
+    }
+    for (let option in optionArray) {
+        let pair = optionArray[option].split('|');
+        let newOption = document.createElement('option');
+        newOption.value = pair[0]
+        newOption.innerHTML = pair[1]
+        s2.options.add(newOption)
+    }
+
+}

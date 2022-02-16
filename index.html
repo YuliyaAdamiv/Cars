@@ -60,10 +60,8 @@
                     </select>
                 </div>
                 <div class="dropdown  button-container" name="dropdown">
-                    <select data-filter="make" class="btn btn-secondary bg-light text-dark dropdown-toggle col-xs-12 col-sm-12 col-md-12  ">
+                    <select id="slct1" name="slct1" data-filter="make" onchange="populate(this.id, 'slct2')" class="btn btn-secondary bg-light text-dark dropdown-toggle col-xs-12 col-sm-12 col-md-12  ">
                             <option selected>Make</option>
-                            <option class="dropdown-item" value="Honda">Honda</option>
-                            <option class="dropdown-item" value="Kia">Kia</option>
                             <option class="dropdown-item" value="Toyota">Toyota</option>
                             <option class="dropdown-item" value="Volkswagen">Volkswagen</option>
                             <option class="dropdown-item" value="Lexus">Lexus</option>
@@ -73,11 +71,8 @@
                         </select>
                 </div>
                 <div class="dropdown  button-container" name="dropdown">
-                    <select data-filter="model" class="btn btn-secondary bg-light text-dark dropdown-toggle col-xs-12 col-sm-12 col-md-12  ">
+                    <select id="slct2" name="slct2" data-filter="model" class="btn btn-secondary bg-light text-dark dropdown-toggle col-xs-12 col-sm-12 col-md-12  ">
                             <option selected>Model</option>
-                            <option class="dropdown-item" value="1">Elantra</option>
-                            <option class="dropdown-item" value="2">RX 350 LUXURY</option>
-                            <option class="dropdown-item" value="3">RX 350 F-SPORT</option>
                         </select>
                 </div>
                 <div class="dropdown  button-container" name="dropdown">
@@ -91,8 +86,14 @@
                     <select data-filter="mileage" class="btn btn-secondary bg-light text-dark dropdown-toggle col-xs-12 col-sm-12 col-md-12  ">
                             <option selected>Mileage</option>
                             <option class="dropdown-item" value="1">19,855 km</option>
-                            <option class="dropdown-item" value="2">104,000 km</option>
-                            <option class="dropdown-item" value="3">69,000 km</option>
+                            <option class="dropdown-item" value="2">39,850 km</option>
+                            <option class="dropdown-item" value="3">59,850 km</option>
+                            <option class="dropdown-item" value="4">69,000 km</option>
+                            <option class="dropdown-item" value="5">86,000 km</option>
+                            <option class="dropdown-item" value="6">95,000 km</option>
+                            <option class="dropdown-item" value="7">99,000 km</option>
+                            <option class="dropdown-item" value="8">104,000 km</option>
+                            
                         </select>
                 </div>
 
@@ -129,7 +130,7 @@
                 </div>
                 <div id="items" class="row row-cols-1 row-cols-xl-4 row-cols-md-4 g-4">
                     <div class="col col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                        <header class="card 2019 diesel h-100">
+                        <header class="card 2019 diesel Volkswagen tiguan 1 h-100">
                             <img src="./image/1.png" class="card-img-top" alt="Volkswagen">
                             <footer class="card-body">
                                 <div class="row ">
@@ -148,7 +149,7 @@
                         </header>
                     </div>
                     <div class="col col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                        <header class="card 2014 gas h-100">
+                        <header class="card 2014 gas Toyota xle 4 h-100">
                             <img src="./image/2.png" class="card-img-top" alt="Toyota">
                             <img class="new" src='./image/New.png' alt='New'>
                             <footer class="card-body">
@@ -168,7 +169,7 @@
                         </header>
                     </div>
                     <div class="col col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                        <header class="card 2017 gas h-100">
+                        <header class="card 2017 gas Lexus luxury 2 h-100">
                             <img src="./image/3.png" class="card-img-top" alt="Lexus">
                             <footer class="card-body">
                                 <div class="row row-col-2">
@@ -187,7 +188,7 @@
                         </header>
                     </div>
                     <div class="col col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                        <header class="card 2016 gas h-100">
+                        <header class="card 2016 gas Toyota lea 8 h-100">
                             <img src="./image/4.png" class="card-img-top" alt="Toyota">
                             <footer class="card-body">
                                 <div class="row row-col-2">
@@ -207,7 +208,7 @@
                         </header>
                     </div>
                     <div class="col col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                        <header class="card 2017 gas h-100">
+                        <header class="card 2017 Hyundai elantra gas 6 h-100">
                             <img src="./image/5.png" class="card-img-top" alt="Hyundai">
                             <footer class="card-body">
                                 <div class="row row-col-2">
@@ -227,7 +228,7 @@
                         </header>
                     </div>
                     <div class="col col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                        <header class="card 2016 diesel h-100">
+                        <header class="card 2016 diesel Mercedes-Bens 3 h-100">
                             <img src="./image/6.png" class="card-img-top" alt="Mersedes">
                             <footer class="card-body">
                                 <div class="row row-col-2">
@@ -247,7 +248,7 @@
                         </header>
                     </div>
                     <div class="col col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                        <header class="card 2015 gas h-100 w-100">
+                        <header class="card 2015 gas Toyota xle h-100 7 w-100">
                             <img src="./image/7.png" class="card-img-top" alt="Toyota">
                             <img class="sold" src="./image/SOLD.png" alt='sold'>
                             <footer class="card-body">
@@ -268,7 +269,7 @@
                         </header>
                     </div>
                     <div class="col col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                        <header class="card 2016 gas h-100">
+                        <header class="card 2016 gas Lexus f-sport 5 h-100">
                             <img src="./image/8.png" class="card-img-top" alt="Lexus">
                             <img class="new" src='./image/New.png' alt='New'>
                             <footer class="card-body">
@@ -289,7 +290,7 @@
                         </header>
                     </div>
                     <div class="col col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                        <header class="card diesel 2019 h-100">
+                        <header class="card diesel Volkswagen tiguan 1 2019 h-100">
                             <img src="./image/1.png" class="card-img-top" alt="Volkswagen">
                             <footer class="card-body">
                                 <div class="row row-col-2">
@@ -308,7 +309,7 @@
                         </header>
                     </div>
                     <div class="col col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                        <header class="card 2014 gas h-100">
+                        <header class="card 2014 gas Toyota xle 4 h-100">
                             <img src="./image/2.png" class="card-img-top" alt="Toyota">
                             <footer class="card-body">
                                 <div class="row row-col-2">
@@ -327,7 +328,7 @@
                         </header>
                     </div>
                     <div class="col col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                        <header class="card 2017 gas h-100">
+                        <header class="card 2017 gas Lexus luxury 2 h-100">
                             <img src="./image/3.png" class="card-img-top" alt="Lexus">
                             <footer class="card-body">
                                 <div class="row row-col-2">
@@ -346,7 +347,7 @@
                         </header>
                     </div>
                     <div class="col col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                        <header class="card 2016 gas h-100">
+                        <header class="card 2016 gas Toyota lea 8 h-100">
                             <img src="./image/4.png" class="card-img-top" alt="Toyota">
                             <footer class="card-body">
                                 <div class="row row-col-2">
@@ -366,7 +367,7 @@
                         </header>
                     </div>
                     <div class="col col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                        <header class="card  2019 diesel h-100">
+                        <header class="card  2019 diesel Volkswagen tiguan 1 h-100">
                             <img src="./image/1.png" class="card-img-top" alt="Volkswagen">
                             <img class="new" src='./image/New.png' alt='New'>
                             <footer class="card-body">
@@ -386,7 +387,7 @@
                         </header>
                     </div>
                     <div class="col col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                        <header class="card 2014 gas h-100">
+                        <header class="card 2014 gas Toyota xle 4 h-100">
                             <img src="./image/2.png" class="card-img-top" alt="Toyota">
                             <footer class="card-body">
                                 <div class="row row-col-2">
@@ -405,7 +406,7 @@
                         </header>
                     </div>
                     <div class="col col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                        <header class="card 2017 gas h-100">
+                        <header class="card 2017 gas Lexus luxury 2 h-100">
                             <img src="./image/3.png" class="card-img-top" alt="Lexus">
                             <footer class="card-body">
                                 <div class="row row-col-2">
@@ -424,7 +425,7 @@
                         </header>
                     </div>
                     <div class="col col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                        <header class="card 2016 gas h-100">
+                        <header class="card 2016 gas Toyota lea 8 h-100">
                             <img src="./image/4.png" class="card-img-top" alt="Toyota">
                             <footer class="card-body">
                                 <div class="row row-col-2">
@@ -444,7 +445,7 @@
                         </header>
                     </div>
                     <div class="col col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                        <header class="card 2017 gas h-100">
+                        <header class="card 2017 Hyundai elantra gas 6 h-100">
                             <img src="./image/5.png" class="card-img-top" alt="Hyundai">
                             <footer class="card-body">
                                 <div class="row row-col-2">
@@ -464,7 +465,7 @@
                         </header>
                     </div>
                     <div class="col col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                        <header class="card 2016 diesel h-100">
+                        <header class="card 2016 diesel Mercedes-Bens 3 h-100">
                             <img src="./image/6.png" class="card-img-top" alt="Mersedes">
                             <footer class="card-body">
                                 <div class="row row-col-2">
@@ -484,7 +485,7 @@
                         </header>
                     </div>
                     <div class="col col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                        <header class="card 2015 gas h-100">
+                        <header class="card 2015 gas Toyota xle 7 h-100">
                             <img src="./image/17.png" class="card-img-top" alt="Toyota">
                             <footer class="card-body">
                                 <div class="row row-col-2">
@@ -504,7 +505,7 @@
                         </header>
                     </div>
                     <div class="col col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                        <header class="card 2016 gas h-100">
+                        <header class="card 2016 gas Lexus f-sport 5 h-100">
                             <img src="./image/8.png" class="card-img-top" alt="Lexus">
                             <img class="new" src='./image/New.png' alt='New'>
                             <footer class="card-body">
@@ -525,7 +526,7 @@
                         </header>
                     </div>
                     <div class="col col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                        <header class="card 2019 diesel h-100">
+                        <header class="card 2019 diesel Volkswagen tiguan 1 h-100">
                             <img src="./image/1.png" class="card-img-top" alt="Volkswagen">
                             <footer class="card-body">
                                 <div class="row row-col-2">
@@ -544,7 +545,7 @@
                         </header>
                     </div>
                     <div class="col col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                        <header class="card 2014 gas h-100">
+                        <header class="card 2014 gas Toyota xle 4 h-100">
                             <img src="./image/2.png" class="card-img-top" alt="Toyota">
                             <footer class="card-body">
                                 <div class="row row-col-2">
